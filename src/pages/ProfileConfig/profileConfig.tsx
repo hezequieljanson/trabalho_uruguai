@@ -1,19 +1,15 @@
 import React from 'react';
 import styles from './profileCStyle';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View } from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
 
 const ProfileConfig = () => {
   return (
     <View style={styles.container}>
       <View>
-        <TouchableOpacity style={styles.editPhotoIcon}>
-          <Icon name="edit" size={24} color="black" />
-        </TouchableOpacity>
+        <Icon name="edit" size={24} color="black" style={styles.editPhotoIcon} />
       </View>
-      <View style={styles.topHalf}>
-        <Text>Helou parte de cima!</Text>
-      </View>
+      <View style={styles.topHalf}></View>
     </View>
   );
 };
